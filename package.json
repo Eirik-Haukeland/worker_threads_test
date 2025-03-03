@@ -21,5 +21,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "vitest"
+  },
+  "dependencies": {
+    "typescript": "5.8.2"
   }
 }
