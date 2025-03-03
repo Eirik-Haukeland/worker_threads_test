@@ -7,8 +7,8 @@ trying out worker_treads api in node
 2. run `npm run start` (start currently accepts a optional arguemnt "test") **note** we are using `--experimental-type-stripping` which is in active development
 
 ## developing:
-to run tests once use: `npm run test`
-to watch the tests use: `npm run test-watch` **note** this is stil exerimental in the node-test runner
+- to run tests once use: `npm run test`
+- to watch the tests use: `npm run test-watch` **note** this is stil exerimental in the node-test runner
 
 ## packages we use
 - for tests we use the buildt inn test runner from node: https://nodejs.org/docs/latest-v22.x/api/test.html#test-runner
