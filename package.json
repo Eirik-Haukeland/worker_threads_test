@@ -21,9 +21,12 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "vitest",
-    "start": "node --experimental-strip-types src/index.ts"
+    "start": "node --experimental-strip-types src/index.ts --"
   },
   "dependencies": {
     "typescript": "5.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.8"
   }
 }
