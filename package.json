@@ -1,0 +1,25 @@
+{
+  "name": "worker_threads_test",
+  "version": "0.0.0",
+  "description": "tyring out worker threads",
+  "keywords": [
+    "test",
+    "node",
+    "worker_threads"
+  ],
+  "homepage": "https://github.com/Eirik-Haukeland/worker_treads_test#readme",
+  "bugs": {
+    "url": "https://github.com/Eirik-Haukeland/worker_treads_test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eirik-Haukeland/worker_treads_test.git"
+  },
+  "license": "Unlicense",
+  "author": "Eirik Berget Haukeland",
+  "type": "modulejs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest"
+  }
+}
