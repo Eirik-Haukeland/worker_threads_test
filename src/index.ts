@@ -2,16 +2,17 @@ import { argv } from 'node:process';
 
 type test = boolean;
 
-const isTest = (isTest: test) => {
+export const isTest = (isTest: test): string => {
     if (isTest) {
-        console.log('is test');
+        return 'is test';
     } else {
-        console.log('not implemented');
+        return 'not implemented';
     }
 };
 
-let ranIsTest = false
-let passedNodeArgs = false
+let ranIsTest: boolean = false
+let passedNodeArgs: boolean = false
+let res: string
 argv
     .filter((val: string) => {
         if (passedNodeArgs) {
@@ -24,7 +25,7 @@ argv
     })
     .forEach((val: string, index) => {
         if (val === ('test')) {
-            isTest(true);
+            res = isTest(true);
             ranIsTest = true;
         } else {
             console.error(`value nr. ${index}: ${val} is not an recognised argument`)
@@ -32,5 +33,7 @@ argv
     })
 
 if (!ranIsTest) {
-    isTest(false)
+    res = isTest(false)
 };
+
+console.log(res)

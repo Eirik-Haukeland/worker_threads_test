@@ -20,7 +20,8 @@
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "test": "vitest",
+    "test": "node --experimental-strip-types --test",
+    "test-watch": "node --experimental-strip-types --test --watch",
     "start": "node --experimental-strip-types src/index.ts --"
   },
   "dependencies": {
