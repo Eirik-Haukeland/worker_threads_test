@@ -17,7 +17,7 @@
   },
   "license": "Unlicense",
   "author": "Eirik Berget Haukeland",
-  "type": "modulejs",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "test": "vitest"
