@@ -1,4 +1,4 @@
-import { describe, it} from "node:test";
+import { describe, it } from "node:test";
 import { isTest } from "../src/index.ts";
 import assert from "node:assert";
 

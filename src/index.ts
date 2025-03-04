@@ -1,4 +1,6 @@
 import { argv } from 'node:process';
+import { getData } from './lib/access_db.ts';
+import { getArticle, getVideos, parseData, filterDuplicates } from './lib/prosess_data.ts';
 
 type test = boolean;
 
@@ -6,6 +8,12 @@ export const isTest = (isTest: test): string => {
     if (isTest) {
         return 'is test';
     } else {
+        const stringData = getData()
+        const jsonData = filterDuplicates(parseData(stringData))
+        const videos = getVideos(jsonData)
+        const articles = getArticle(jsonData)
+
+        console.log({videos: videos.length, articles: articles.length})
         return 'not implemented';
     }
 };

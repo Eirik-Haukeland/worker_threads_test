@@ -13,4 +13,6 @@ trying out worker_treads api in node
 ## packages we use
 - for tests we use the buildt inn test runner from node: https://nodejs.org/docs/latest-v22.x/api/test.html#test-runner
 - we use typescript with --experimental-type-stripping: https://nodejs.org/docs/latest-v22.x/api/typescript.html#type-stripping
+- for data storage vi use the experimental sqlite package: https://nodejs.org/docs/v22.14.0/api/sqlite.html#sqlite
+- for uuids we use the web crypto api: https://nodejs.org/docs/latest-v23.x/api/webcrypto.html
 
