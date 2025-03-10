@@ -22,9 +22,12 @@
   "scripts": {
     "test": "node --experimental-strip-types --test",
     "test-watch": "node --experimental-strip-types --test --watch",
-    "start": "node --experimental-strip-types src/index.ts --"
+    "cli-start": "node --experimental-strip-types src/index.ts --",
+    "server-start": "presist_db=true db_name=ebh.db node --experimental-strip-types --watch src/server.ts"
   },
   "dependencies": {
+    "fastify": "5.2.1",
+    "lit": "3.2.1",
     "typescript": "5.8.2"
   },
   "devDependencies": {
